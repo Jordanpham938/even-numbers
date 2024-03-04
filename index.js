@@ -13,7 +13,16 @@ console.log(n);
  * even numbers.
  * For example: if n = 10, the result is "0,2,4,6,8,10"
  */
-let result = undefined;
+let result = ''; 
+
+ for (let i = 0; i <= n; i++) {
+   if (i % 2 === 0) { 
+     if (result !== '') {
+       result += ','; 
+     }
+     result += i;
+   }
+ }
 
 // DO NOT CHANGE THE LINE BELOW.
 console.log(result);
